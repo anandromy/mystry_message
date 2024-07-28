@@ -60,7 +60,7 @@ export default function SignupPage() {
     const onSubmit = async (data: z.infer<typeof signUpSchema>) => {
         setIsSubmitting(true)
         try {
-            const response = await axios.post<ApiResponse>(`/api/sing-up`, data)
+            const response = await axios.post<ApiResponse>(`/api/sign-up`, data)
             toast.success("Success", {
                 description: response.data.message
             })
