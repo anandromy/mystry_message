@@ -40,7 +40,7 @@ export async function POST(request: Request) {
         }
         
     } catch (error) {
-        console.error("Error verifying user", error)
+        console.error("Error signing up user", error)
         return Response.json({
             success: false,
             message: "Error verifying user"
